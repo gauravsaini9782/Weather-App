@@ -1,0 +1,107 @@
+* {
+  margin: 0%;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  /* background-color:rgb(159, 150, 150); */
+  background-image: url("wp2801694.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conatiner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  /* background-image: url("night.png");
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute; */
+}
+
+.weather {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  color: rgb(247, 247, 249);
+  padding: 10px;
+  font-size: 30px;
+}
+
+.weather p {
+  font-size: 2rem;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.weather span {
+  font-size: 0.75rem;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.weather3 span {
+  margin: 0.3rem;
+  padding: 10px;
+  font-size: 30px;
+}
+nav {
+  height: 100px;
+  border-radius: 100px 100px 0 0;
+  padding: 1rem 0;
+  box-shadow: 0 0 25px rgba(0, 0, 0);
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  background-color: rgb(68, 123, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 80%;
+}
+
+nav form {
+  width: 70%;
+  grid-template-columns: 5fr 1fr;
+  display: grid;
+}
+
+.edit {
+    border-radius: 0 25px 25px 0;
+    border-style: none;
+    border-color: rgb(250, 252, 247);
+    color: rgb(255, 255, 255);
+    background-color: rgb(53, 195, 230);
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  .edit:hover {
+    background-color: rgb(21, 121, 146); 
+    color: rgb(230, 230, 230);
+}
+
+  
+
+.searchField {
+  font-size: 1rem;
+  outline: none;
+  border-radius: 25px 0 0 25px;
+  color: rgb(7, 7, 7);
+  background-color: white;
+  font-style: inherit;
+  border: none;
+  height: 5vh;
+  padding-left: 14px;
+}
